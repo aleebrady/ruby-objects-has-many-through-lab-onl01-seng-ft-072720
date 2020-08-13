@@ -13,8 +13,8 @@ class Doctor
     @@all
   end
   
-  def new_appointment(date, patient)
-    Appointment.new(date, patient, self)
+  def new_appointment(date, patient) 
+    Appointment.new(date, patient, self) #creates new app with the arg given in the App class
   end
   
   def appointments
