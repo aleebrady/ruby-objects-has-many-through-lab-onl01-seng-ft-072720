@@ -25,7 +25,7 @@ class Artist
     Song.new(name, self, genre) # reflects init of Song class to create new song with arguments
   end
   
-  def genres
+  def genres # has many genres, through songs
     songs.map do |song| # connects songs to genres 
       song.genre 
   end
