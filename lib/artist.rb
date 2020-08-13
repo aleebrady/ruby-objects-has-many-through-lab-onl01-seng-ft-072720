@@ -26,9 +26,9 @@ class Artist
   end
   
   def genres # has many genres, through songs
-    songs.map do |song| # connects songs to genres 
-    binding.pry
+    songs.map do |song| # connects songs to genres
       song.genre 
+      binding.pry
   end
 end
   
