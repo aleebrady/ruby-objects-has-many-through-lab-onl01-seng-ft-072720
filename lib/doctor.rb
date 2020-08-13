@@ -21,8 +21,8 @@ class Doctor
     Appointment.all.select {|app| app.doctor ==self} # gets all apps.w/ doc == self
   end
   
-  def patients
-    appointments.map {|apps| apps.patient}
+  def patients # 
+    appointments.map {|apps| apps.patient} # through apps associates 
   end
   
 end
