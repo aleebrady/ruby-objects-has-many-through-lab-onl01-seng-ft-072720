@@ -16,7 +16,7 @@ class Artist
   end
   
   def songs # returns song by a specific artist 
-    Song.all.select do |song| # get all songs from Song class and self each one
+    Song.all.select do |song| # get all songs from Song class 
       song.artist == self # song.artist == artist of song 
     end
   end
@@ -25,8 +25,8 @@ class Artist
     Song.new(name, self, genre) # reflects init of Song class to create new song with arguments
   end
   
-  def genres # 
-    songs.map do |song|
+  def genres
+    songs.select do |song| 
       song.genre
   end
 end
