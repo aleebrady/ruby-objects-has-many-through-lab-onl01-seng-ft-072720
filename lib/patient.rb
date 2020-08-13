@@ -1,4 +1,4 @@
-class Paitient
+class Patient
   
   attr_accessor :name 
   
