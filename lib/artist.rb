@@ -26,8 +26,8 @@ class Artist
   end
   
   def genres
-    songs.map do |song| # connects 
-      song.genre
+    songs.map do |song| # connects songs to genres 
+      song.genre 
   end
 end
   
