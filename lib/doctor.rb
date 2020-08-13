@@ -4,12 +4,12 @@ class Doctor
   
   @@all = []
   
-  def initialize(name)
+  def initialize(name)  # initializes with name and self adding to class variable array
     @name = name 
     @@all <<  self
   end
   
-  def self.all
+  def self.all #class method to add objects to class variable array
     @@all
   end
   
