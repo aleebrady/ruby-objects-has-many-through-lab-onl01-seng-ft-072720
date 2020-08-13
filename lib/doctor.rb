@@ -17,7 +17,7 @@ class Doctor
     Appointment.new(date, patient, self) #creates new app with the arg given in the App class
   end
   
-  def appointments
+  def appointments #
     Appointment.all.select {|app| app.doctor ==self} 
   end
   
